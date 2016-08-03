@@ -22,7 +22,7 @@ These snippets are general purpose written for the sole purpose of saving time o
 
 - `bootstrap`
 
-![Html Snippet](/images/bootstrap-snippet.gif)
+![Bootstrap Snippet](/images/bootstrap-snippet.gif)
 
 **Bootstrap Related Snippets**
 - `form-group`
@@ -37,7 +37,7 @@ These snippets are general purpose written for the sole purpose of saving time o
 
 ### Recommended
 
-For JADE language support in Atom check: [aotm-jade](https://atom.io/packages/atom-jade) developed by [merrihew](https://atom.io/users/merrihew)
+For JADE language support in Atom check: [atom-jade](https://atom.io/packages/atom-jade) developed by [merrihew](https://atom.io/users/merrihew)
 
 ![A screenshot of your package](https://f.cloud.github.com/assets/69169/2290250/c35d867a-a017-11e3-86be-cd7c5bf3ff9b.gif)
 
