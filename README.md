@@ -18,7 +18,7 @@ These snippets are general purpose written for the sole purpose of saving time o
 **Template Snippets**
 - `html`
 
-![Html Snippet](/images/html-snippet.gif)
+[Html Snippet](/images/html-snippet.gif)
 
 - `bootstrap`
 
