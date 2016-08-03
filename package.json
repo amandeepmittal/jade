@@ -6,7 +6,8 @@
   "keywords": [
     "jade",
     "atom",
-    "snippets"
+    "snippets",
+    "pug"
   ],
   "activationCommands": {
     "atom-workspace": "jade:toggle"

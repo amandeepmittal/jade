@@ -1,6 +1,6 @@
 # Jade
 
-_Jade snippets for Atom_
+_Jade/Pug snippets for Atom_
 
 ## Install
 Go to  `Settings > Install` & then search for `Jade` under `Packages`

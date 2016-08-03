@@ -1,4 +1,4 @@
-'.source.jade':
+'.source.jade, source.pug':
   #jade template snippets
   'html template':
     'prefix':'html'
