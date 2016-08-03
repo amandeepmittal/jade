@@ -1,0 +1,172 @@
+'.source.jade':
+  #jade template snippets
+  'html template':
+    'prefix':'html'
+    'body':'''
+      doctype
+      html(lang='en')
+        head
+          meta(charset='utf-8')
+          title
+        body
+    '''
+  'bootstrap template':
+    'prefix': 'bootstrap'
+    'body':'''
+      doctype
+      html(lang='en')
+        head
+          meta(charset='utf-8')
+          meta(http-equiv='X-UA-Compatible', content='IE=edge')
+          meta(name='viewport', content='width=device-width, initial-scale=1')
+          // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+          meta(name='description', content='')
+          meta(name='author', content='')
+          title
+          // Bootstrap core CSS
+          link(href='/css/bootstrap.css', rel='stylesheet')
+          link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', rel='stylesheet')
+          link(href='/css/style.css', rel='stylesheet')
+          // HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
+          //if lt IE 9
+          script(src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js')
+          script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+
+        body
+          block content
+
+          script(src='/js/jquery.js')
+          script(src='/js/bootstrap.js')
+    '''
+  #jade syntax
+  'extends layout':
+    'prefix':'ext'
+    'body':'extends layout.jade'
+  'includes':
+    'prefix':'inc'
+    'body':'include ./includes/'
+  'block blockname':
+    'prefix': 'block'
+    'body': 'block ${1:blockname}$2'
+  #style general purpose
+  'link':
+    'prefix':'link'
+    'body':'link(rel="stylesheet", href="${2:css/style.css}", ${3:attr})$4'
+  #tags
+  'anchor':
+    'prefix':'a'
+    'body':'a(href="${1:#}") ${2:link}$3'
+  'image':
+    'prefix':'img'
+    'body':'img(src="${1:#}", alt="${2:alt}")$3'
+  'form':
+    'prefix':'form'
+    'body':'form(action="${1:#}" method="${2:method}")$3'
+  'meta':
+    'prefix':'meta'
+    'body':'meta(name="${1:name}" content="${2:content}")$3'
+  #others
+  'favicon':
+    'prefix':'favicon'
+    'body':'link(rel="shortcut icon", href="$1.ico")'
+  'lorem lipsum lol':
+    'prefix':'lorem'
+    'body':'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. LOLUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. LOLDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+  #bootstrap related
+  'form group':
+    'prefix':'form-group'
+    'body':'''
+      .form-group
+        label(for='${1:name}') ${2:Name}
+        input.form-control(type='${3:name}', name='${4:name}' placeholder='${5:holder}')
+    '''
+  'button':
+    'prefix':'button'
+    'body':'button.btn.btn-${1:primary}(type="submit") ${2:Submit}$3'
+  'font-awesome icon':
+    'prefix':'fa'
+    'body':'i.fa.fa-${1:github}(aria-hidden="true") &nbsp;$2'
+  'footer':
+    'prefix':'footer'
+    'body':'''
+      footer
+        .container
+          p
+          | &copy; 2016 |
+          i.fa.fa-${1:github}(aria-hidden='true') &nbsp;
+          a(href='#') View Source
+    '''
+  'panel':
+    'prefix':'panel'
+    'body':'''
+      .panel.panel-primary
+        .panel-heading ${1:Heading}
+        .panel-body
+          $2
+    '''
+  #form templates
+  'login form':
+    'prefix':'login-form'
+    'body':'''
+      form(action="${1:#}" method="${2:method}")
+        .form-group
+          label(for='${3:email}') ${4:Email}
+          input.form-control(type='${3:email}', name='${3:email}' placeholder='${5:Email}' autofocus=true)
+        .form-group
+          label(for='${6:password}') ${7:Password}
+          input.form-control(type='${6:password}', name='${6:password}')
+        button.btn.btn-${8:primary}(type="submit") ${9:Log-in}
+    '''
+  'signup form':
+    'prefix':'register-form'
+    'body':'''
+      form(action="${1:#}" method="${2:method}")
+        .form-group
+          label(for='name') Name
+          input.form-control(type='text', name='name' placeholder='Name' autofocus=true)
+        .form-group
+          label(for='${3:email}') ${4:Email}
+          input.form-control(type='${3:email}', name='${3:email}' placeholder='${5:Email}')
+        .form-group
+          label(for='${6:password}') ${7:Password}
+          input.form-control(type='${6:password}', name='${6:password}')
+        button.btn.btn-${8:primary}(type="submit") ${9:Register}
+    '''
+  #navrbar template(s)
+  'navbar type1':
+    'prefix': 'navbar1'
+    'body':'''
+      nav.navbar.navbar-default.navbar-static-top
+        .container
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand(href='/') App Name
+          #navbar.navbar-collapse.collapse
+            ul.nav.navbar-nav
+              li(class=(title == 'Home') ? 'active' : null)
+                a(href='/') Home
+              li(class=(title == 'About') ? 'active' : null)
+                a(href='/about') About
+            ul.nav.navbar-nav.navbar-right
+              if user
+                li.dropdown
+                  a.navbar-avatar.dropdown-toggle(href='#', data-toggle='dropdown')
+                    span #{user.name || user.email} &nbsp;
+                    i.caret
+                  ul.dropdown-menu
+                    li
+                      a(href='/profile') Profile
+                    li.divider(role='separator')
+                    li
+                      a(href='/logout') Logout
+              else
+                li(class=(title == 'Log in') ? 'active' : null)
+                  a(href='/login') Log-in
+                li(class=(title == 'Register') ? 'active' : null)
+                  a(href='/register') Register
+          // /.nav-collapse
+    '''

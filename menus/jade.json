@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle jade",
+        "command": "jade:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "jade",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "jade:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
