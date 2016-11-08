@@ -7,7 +7,11 @@
     "jade",
     "atom",
     "snippets",
-    "pug"
+    "pug",
+    "template",
+    "engine",
+    "node",
+    "js"
   ],
   "activationCommands": {
     "atom-workspace": "jade:toggle"
