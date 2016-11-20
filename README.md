@@ -2,6 +2,10 @@
 
 _Jade/Pug snippets for Atom_
 
+[![apm](https://img.shields.io/apm/v/jade.svg?style=flat-square)](https://atom.io/packages/jade)
+[![apm](https://img.shields.io/apm/dm/jade.svg?style=flat-square)](https://atom.io/packages/jade)
+[![apm](https://img.shields.io/apm/l/jade.svg?style=flat-square)](https://atom.io/packages/jade)
+
 ## Install
 Go to  `Settings > Install` & then search for `Jade` under `Packages`
 
