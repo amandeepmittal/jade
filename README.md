@@ -10,7 +10,7 @@ _Jade/Pug snippets for Atom_
 Go to  `Settings > Install` & then search for `Jade` under `Packages`
 
 ## Snippets
-These snippets are general purpose written for the sole purpose of saving time over writing boilerplate code again and again. You might find one or two of the snippets a bit opinionated, thus, feel free to remove them or add your own.
+These snippets are general purpose written for the sole purpose of saving time over writing boilerplate code again and again. One might find one or two of the snippets a bit opinionated, thus, feel free to remove them or add your own.
 
 **Syntax**  
 - `ext` for `extends layout`
