@@ -1,7 +1,7 @@
 {
   "name": "jade",
   "main": "./lib/jade",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Jade/Pug snippets for Atom",
   "keywords": [
     "jade",
