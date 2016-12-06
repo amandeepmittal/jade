@@ -39,9 +39,12 @@
           script(src='/js/bootstrap.js')
     '''
   #jade syntax
-  'extends layout':
-    'prefix':'ext'
+  'extends layout.jade':
+    'prefix':'extj'
     'body':'extends layout.jade'
+  'extends layout.pug':
+    'prefix':'extp'
+    'body':'extends layout.pug'
   'includes':
     'prefix':'inc'
     'body':'include ./includes/'
