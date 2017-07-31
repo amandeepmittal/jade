@@ -14,8 +14,6 @@ These snippets are general purpose written for the sole purpose of saving the ti
 
 **Syntax**  
 - `ext` for `extends layout`
-- `extj` for `extends layout.jade`
-- `extp` for `extends layout.pug`
 - `inc` for `include ./includes/`
 - `block` for `block blockname`
 
