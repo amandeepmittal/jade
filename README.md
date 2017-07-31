@@ -16,6 +16,7 @@ These snippets are general purpose written for the sole purpose of saving the ti
 - `ext` for `extends layout`
 - `inc` for `include ./includes/`
 - `block` for `block blockname`
+- `pugrf` for pug.renderFile()
 
 **Tags** `a`, `img`, `form`, `meta`, `link`
 

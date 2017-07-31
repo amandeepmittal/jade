@@ -38,7 +38,7 @@
           script(src='/js/jquery.js')
           script(src='/js/bootstrap.js')
     '''
-  #jade syntax
+  #jade/pug syntax
   'extends layout':
     'prefix':'ext'
     'body':'extends layout'
@@ -48,6 +48,9 @@
   'block blockname':
     'prefix': 'block'
     'body': 'block ${1:blockname}$2'
+  'render file':
+    'prefix': 'pugrf'
+    'body': 'pug.renderFile(${1:value});'
   #style general purpose
   'link':
     'prefix':'link'
