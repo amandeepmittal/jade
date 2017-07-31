@@ -17,6 +17,7 @@ These snippets are general purpose written for the sole purpose of saving the ti
 - `inc` for `include ./includes/`
 - `block` for `block blockname`
 - `pugrf` for pug.renderFile()
+- `mx` for mixin
 
 **Tags** `a`, `img`, `form`, `meta`, `link`
 

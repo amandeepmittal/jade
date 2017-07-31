@@ -51,6 +51,9 @@
   'render file':
     'prefix': 'pugrf'
     'body': 'pug.renderFile(${1:value});'
+  'mixin':
+    'prefix': 'mx'
+    'body': 'mixin ${1:value}'
   #style general purpose
   'link':
     'prefix':'link'
