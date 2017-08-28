@@ -1,5 +1,7 @@
 # Jade
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/amandeepmittal/jade.svg)](https://greenkeeper.io/)
+
 _Jade/Pug snippets for Atom_
 
 [![apm](https://img.shields.io/apm/v/jade.svg?style=flat-square)](https://atom.io/packages/jade)
